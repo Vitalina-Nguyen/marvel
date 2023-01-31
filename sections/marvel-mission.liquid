@@ -12,7 +12,9 @@
 
   <div class="text-box_text">
     {% for block in section.blocks %}
-      {{ block.settings.mission-text }}
+      <div>
+        {{ block.settings.mission-text }}
+      </div>
     {% endfor %}
   </div>
 </div>
@@ -68,7 +70,7 @@ Hello {{ section.settings.title }}
       }, {
         "name": "Mission text",
         "type": "add-text",
-        "limit": 1,
+        "limit": 2,
         "settings": [
           {
             "type": "text",
