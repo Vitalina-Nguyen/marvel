@@ -1,3 +1,82 @@
-<div>
-  Hello
+{{ "mission.scss.css" | asset_url | stylesheet_tag }}
+
+<div class="container">
+  <h2 class="mission__title">Mission</h2>
+  <div class="line">&nbsp</div>
+
+  <div class="mission__pic">
+    {% for block in section.blocks %}
+      <img src="{{ block.settings.img-url | img_url: 'master'}}" alt="">
+    {% endfor %}
+  </div>
+
+  <div class="text-box_text">
+    {% for block in section.blocks %}
+      {{ block.settings.mission-text }}
+    {% endfor %}
+  </div>
 </div>
+
+<!--
+<div class="red">
+Hello {{ section.settings.title }}
+<div>
+{% for block in section.blocks %}
+<div>
+{{ block.settings.title }}
+</div>
+{% endfor %}
+</div>
+</div>
+
+{
+"name": "test-block",
+"type": "test-type",
+"limit": 5,
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Test text"
+}
+]
+}, 
+
+-->{% schema %}
+  {
+    "name": "mission",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Test text"
+      }
+    ],
+
+    "blocks": [
+      {
+        "name": "Mission picture",
+        "type": "change-pic",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img-url",
+            "label": "Your image"
+          }
+        ]
+      }, {
+        "name": "Mission text",
+        "type": "add-text",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "mission-text",
+            "label": "Your text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
