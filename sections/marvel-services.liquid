@@ -6,7 +6,7 @@
   <div class="container">
     <h2 class="section__title">{{ section.settings.section-title }}</h2>
     <div class="line">&nbsp</div>
-    <p>{{ section.settings.section-descr }}</p>
+    <p class="services__descr">{{ section.settings.section-descr }}</p>
 
     <div class="services-box">
       {% for block in section.blocks %}
@@ -27,6 +27,7 @@
         </div>
       {% endfor %}
     </div>
+    <p class="services__concl">{{ section.settings.section-conclusion }}</p>
   </div>
 </section>
 
@@ -44,6 +45,10 @@
         "type": "text",
         "id": "section-descr",
         "label": "Add section describtion"
+      }, {
+        "type": "text",
+        "id": "section-conclusion",
+        "label": "Add section conclusion"
       }
     ],
 
