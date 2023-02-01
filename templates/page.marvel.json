@@ -1,14 +1,30 @@
 {
-    "sections": {
-        "mission": {
-            "type": "marvel-mission",
-            "settings": {
-              "padding_top": 28,
-              "padding_bottom": 28
-            }
+  "sections": {
+    "mission": {
+      "type": "marvel-mission",
+      "blocks": {
+        "8f602139-9e09-42b6-acf1-7882e55e7ba1": {
+          "type": "add-benefit",
+          "settings": {
+            "benefit-icon": "shopify:\/\/shop_images\/benefit_5.webp",
+            "benefit-tittle-num": "sdfds",
+            "benefit-tittle-letter": "sdf",
+            "benefit-descr": "sdf"
           }
-    },
-    "order": [
-      "mission"
-    ]
-  }
+        }
+      },
+      "block_order": [
+        "8f602139-9e09-42b6-acf1-7882e55e7ba1"
+      ],
+      "settings": {
+        "section-title": "kkkk",
+        "section-img-url": "shopify:\/\/shop_images\/city.jpg",
+        "section-descr-1": "kl;k;l';",
+        "section-descr-2": "xgdfg"
+      }
+    }
+  },
+  "order": [
+    "mission"
+  ]
+}
