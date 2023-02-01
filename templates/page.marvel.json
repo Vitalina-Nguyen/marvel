@@ -6,21 +6,61 @@
         "8f602139-9e09-42b6-acf1-7882e55e7ba1": {
           "type": "add-benefit",
           "settings": {
+            "benefit-icon": "shopify:\/\/shop_images\/benefit_1_d92958aa-94a5-4bf3-990b-9d793191de47.webp",
+            "benefit-tittle-num": "$1",
+            "benefit-tittle-letter": "B",
+            "benefit-descr": "in closed RNG transactions in 2021 alone"
+          }
+        },
+        "12c669ad-8153-43cb-b05a-c08dbe3aa2e7": {
+          "type": "add-benefit",
+          "settings": {
+            "benefit-icon": "shopify:\/\/shop_images\/benefit_2.webp",
+            "benefit-tittle-num": "$4",
+            "benefit-tittle-letter": "B",
+            "benefit-descr": "in cumulative Renewable Energy and RNG closings"
+          }
+        },
+        "19b8c36c-f60c-4143-9899-26ec594af8ae": {
+          "type": "add-benefit",
+          "settings": {
+            "benefit-icon": "shopify:\/\/shop_images\/benefit_3.webp",
+            "benefit-tittle-num": "30",
+            "benefit-tittle-letter": "Yrs",
+            "benefit-descr": "of collective industry experience"
+          }
+        },
+        "e7b4b3fc-58fe-483e-a8cc-a0b1f6c2a8fa": {
+          "type": "add-benefit",
+          "settings": {
+            "benefit-icon": "shopify:\/\/shop_images\/benefit_4.webp",
+            "benefit-tittle-num": "$300",
+            "benefit-tittle-letter": "M",
+            "benefit-descr": "in capital placed for client ventures"
+          }
+        },
+        "3ccfd3cb-1a89-4dd6-bc89-ff485a47c1b7": {
+          "type": "add-benefit",
+          "settings": {
             "benefit-icon": "shopify:\/\/shop_images\/benefit_5.webp",
-            "benefit-tittle-num": "sdfds",
-            "benefit-tittle-letter": "sdf",
-            "benefit-descr": "sdf"
+            "benefit-tittle-num": "100%",
+            "benefit-tittle-letter": "",
+            "benefit-descr": "independent and unbiased advice"
           }
         }
       },
       "block_order": [
-        "8f602139-9e09-42b6-acf1-7882e55e7ba1"
+        "8f602139-9e09-42b6-acf1-7882e55e7ba1",
+        "12c669ad-8153-43cb-b05a-c08dbe3aa2e7",
+        "19b8c36c-f60c-4143-9899-26ec594af8ae",
+        "e7b4b3fc-58fe-483e-a8cc-a0b1f6c2a8fa",
+        "3ccfd3cb-1a89-4dd6-bc89-ff485a47c1b7"
       ],
       "settings": {
-        "section-title": "kkkk",
+        "section-title": "Mission",
         "section-img-url": "shopify:\/\/shop_images\/city.jpg",
-        "section-descr-1": "kl;k;l';",
-        "section-descr-2": "xgdfg"
+        "section-descr-1": "Energy Transition is our core and only focus. We structure complex, meaningfully large renewable natural gas (RNG) and power transactions for companies committed to environmentally-sound, commercially-ready solutions.",
+        "section-descr-2": "Our principals are experienced practitioners who have run companies, originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation. With over three decades of combined experience in renewables specifically, our customers chose us, every time, for our unparalleled industry knowledge, market acumen, professionalism and commitment to their prosperity."
       }
     }
   },
