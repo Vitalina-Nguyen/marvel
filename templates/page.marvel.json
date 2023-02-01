@@ -75,10 +75,32 @@
             "service-descr-3": "Renewable PPA origination",
             "service-descr-4": "Contract negotiations and structuring"
           }
+        },
+        "a0641230-ac3d-4655-911d-a56ecbec11c0": {
+          "type": "add-service",
+          "settings": {
+            "service-name": "Enterprise Strategy",
+            "service-descr-1": "Market advisory",
+            "service-descr-2": "Risk management",
+            "service-descr-3": "Capital sourcing or deployment",
+            "service-descr-4": "Resource optimization"
+          }
+        },
+        "34211d79-ae7f-46c0-bf09-b6e2b440c1eb": {
+          "type": "add-service",
+          "settings": {
+            "service-name": "Market Development",
+            "service-descr-1": "New venture strategy",
+            "service-descr-2": "Go-to-market architecture",
+            "service-descr-3": "M&A support",
+            "service-descr-4": "Marketing and partnerships"
+          }
         }
       },
       "block_order": [
-        "34897357-a381-4780-a2b6-47e3af2a5160"
+        "34897357-a381-4780-a2b6-47e3af2a5160",
+        "a0641230-ac3d-4655-911d-a56ecbec11c0",
+        "34211d79-ae7f-46c0-bf09-b6e2b440c1eb"
       ],
       "settings": {
         "section-title": "Services",
