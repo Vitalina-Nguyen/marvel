@@ -1,65 +1,43 @@
+{{ "general.scss.css" | asset_url | stylesheet_tag }}
 {{ "mission.scss.css" | asset_url | stylesheet_tag }}
 
-<div class="container">
-  <h2 class="mission__title">{{ section.settings.section-title }}</h2>
-  <div class="line">&nbsp</div>
+<section class="mission">
+  <div class="container">
+    <h2 class="section__title">{{ section.settings.section-title }}</h2>
+    <div class="line">&nbsp</div>
 
-  <div class="mission-text-box">
-    <div class="mission__pic">
-      <img src="{{ section.settings.section-img-url | img_url: 'master'}}" alt="">
-    </div>
-
-    <div class="text-box_text">
-      <p>
-        {{ section.settings.section-descr-1 }}
-      </p>
-      <p>
-        {{ section.settings.section-descr-2 }}
-      </p>
-    </div>
-  </div>
-  <div class="benefits-box">
-    {% for block in section.blocks %}
-      <div class="benefit">
-        <div class="benefit__ic">
-          <img src="{{ block.settings.benefit-icon | img_url: 'master'}}" alt="">
-        </div>
-        <div>
-          <span class="benefit__title-num">{{ block.settings.benefit-tittle-num }}</span>
-          <span class="benefit__title-letter">{{ block.settings.benefit-tittle-letter }}</span>
-        </div>
-        <p>{{ block.settings.benefit-descr }}</p>
+    <div class="mission-text-box">
+      <div class="mission__pic">
+        <img src="{{ section.settings.section-img-url | img_url: 'master'}}" alt="">
       </div>
-    {% endfor %}
+
+      <div class="text-box_text">
+        <p>
+          {{ section.settings.section-descr-1 }}
+        </p>
+        <p>
+          {{ section.settings.section-descr-2 }}
+        </p>
+      </div>
+    </div>
+    <div class="benefits-box">
+      {% for block in section.blocks %}
+        <div class="benefit">
+          <div class="benefit__ic">
+            <img src="{{ block.settings.benefit-icon | img_url: 'master'}}" alt="">
+          </div>
+          <div>
+            <span class="benefit__title-num">{{ block.settings.benefit-tittle-num }}</span>
+            <span class="benefit__title-letter">{{ block.settings.benefit-tittle-letter }}</span>
+          </div>
+          <p>{{ block.settings.benefit-descr }}</p>
+        </div>
+      {% endfor %}
+    </div>
   </div>
-</div>
+</section>
 
-<!--
-<div class="red">
-Hello {{ section.settings.title }}
-<div>
-{% for block in section.blocks %}
-<div>
-{{ block.settings.title }}
-</div>
-{% endfor %}
-</div>
-</div>
-
-{
-"name": "test-block",
-"type": "test-type",
-"limit": 5,
-"settings": [
-{
-"type": "text",
-"id": "title",
-"label": "Test text"
-}
-]
-}, 
-
--->{% schema %}
+{% schema %}
   {
     "name": "mission",
     "settings": [

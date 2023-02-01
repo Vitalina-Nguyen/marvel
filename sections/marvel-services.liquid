@@ -1,0 +1,85 @@
+{{ "general.scss.css" | asset_url | stylesheet_tag }}
+{{ "services.scss.css" | asset_url | stylesheet_tag }}
+
+<section class="services">
+  <div class="container">
+    <h2 class="section__title">{{ section.settings.section-title }}</h2>
+    <div class="line">&nbsp</div>
+    <p>{{ section.settings.section-descr }}</p>
+
+    <div class="services-box">
+      {% for block in section.blocks %}
+        <div class="services-item">
+          <div class="service-name">{{ block.settings.service-name }}
+          </div>
+          <ul class="services-descr-list">
+            <li>{{ block.settings.service-descr-1 }}</li>
+            <li>{{ block.settings.service-descr-2 }}</li>
+            <li>{{ block.settings.service-descr-3 }}</li>
+            <li>{{ block.settings.service-descr-4 }}</li>
+          </ul>
+          <div class="service-arrow">
+            <div class="line"></div>
+            <div class="arrow">
+              <div></div>
+            </div>
+          </div>
+        </div>
+
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+
+{% schema %}
+  {
+    "name": "services",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section-title",
+        "label": "Add section title"
+      }, {
+        "type": "text",
+        "id": "section-descr",
+        "label": "Add section describtion"
+      }
+    ],
+
+    "blocks": [
+      {
+        "name": "Service Item",
+        "type": "add-service",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "text",
+            "id": "service-name",
+            "label": "Add service name"
+          },
+          {
+            "type": "text",
+            "id": "service-descr-1",
+            "label": "Add service's decribtion"
+          },
+          {
+            "type": "text",
+            "id": "service-descr-2",
+            "label": "Add service's decribtion"
+          },
+          {
+            "type": "text",
+            "id": "service-descr-3",
+            "label": "Add service's decribtion"
+          }, {
+            "type": "text",
+            "id": "service-descr-4",
+            "label": "Add service's decribtion"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
