@@ -1,19 +1,34 @@
 {{ "mission.scss.css" | asset_url | stylesheet_tag }}
 
 <div class="container">
-  <h2 class="mission__title">Mission</h2>
+  <h2 class="mission__title">{{ section.settings.section-title }}</h2>
   <div class="line">&nbsp</div>
 
-  <div class="mission__pic">
-    {% for block in section.blocks %}
-      <img src="{{ block.settings.img-url | img_url: 'master'}}" alt="">
-    {% endfor %}
-  </div>
+  <div class="mission-text-box">
+    <div class="mission__pic">
+      <img src="{{ section.settings.section-img-url | img_url: 'master'}}" alt="">
+    </div>
 
-  <div class="text-box_text">
+    <div class="text-box_text">
+      <p>
+        {{ section.settings.section-descr-1 }}
+      </p>
+      <p>
+        {{ section.settings.section-descr-2 }}
+      </p>
+    </div>
+  </div>
+  <div class="benefits-box">
     {% for block in section.blocks %}
-      <div>
-        {{ block.settings.mission-text }}
+      <div class="benefit">
+        <div class="benefit__ic">
+          <img src="{{ block.settings.benefit-icon | img_url: 'master'}}" alt="">
+        </div>
+        <div>
+          <span class="benefit__title-num">{{ block.settings.benefit-tittle-num }}</span>
+          <span class="benefit__title-letter">{{ block.settings.benefit-tittle-letter }}</span>
+        </div>
+        <p>{{ block.settings.benefit-descr }}</p>
       </div>
     {% endfor %}
   </div>
@@ -50,32 +65,45 @@ Hello {{ section.settings.title }}
     "settings": [
       {
         "type": "text",
-        "id": "title",
-        "label": "Test text"
+        "id": "section-title",
+        "label": "Add section title"
+      }, {
+        "type": "image_picker",
+        "id": "section-img-url",
+        "label": "Add section image"
+      }, {
+        "type": "text",
+        "id": "section-descr-1",
+        "label": "Add section describtion"
+      }, {
+        "type": "text",
+        "id": "section-descr-2",
+        "label": "Add section describtion"
       }
     ],
 
     "blocks": [
       {
-        "name": "Mission picture",
-        "type": "change-pic",
-        "limit": 1,
+        "name": "Add benefit",
+        "type": "add-benefit",
+        "limit": 5,
         "settings": [
           {
             "type": "image_picker",
-            "id": "img-url",
-            "label": "Your image"
-          }
-        ]
-      }, {
-        "name": "Mission text",
-        "type": "add-text",
-        "limit": 2,
-        "settings": [
-          {
+            "id": "benefit-icon",
+            "label": "Benefit's icon"
+          }, {
             "type": "text",
-            "id": "mission-text",
-            "label": "Your text"
+            "id": "benefit-tittle-num",
+            "label": "Benefit's tittle number"
+          }, {
+            "type": "text",
+            "id": "benefit-tittle-letter",
+            "label": "Benefit's tittle letter"
+          }, {
+            "type": "text",
+            "id": "benefit-descr",
+            "label": "Benefit's description"
           }
         ]
       }
