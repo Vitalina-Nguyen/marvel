@@ -4,8 +4,79 @@
     .line {
         background-color: #FFFFFF; 
     }
-}
 
+    .services-box {
+        margin: 56px 0;
+    }
+
+    .service-item {
+        max-width: 351px;
+    }
+
+    .service-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .service-name {
+        font-family: Sofia Pro Bold;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    ul {
+ 
+        margin-bottom: 24px;
+    }
+
+    ul {
+        position: relative;
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 12px;
+    }
+
+    ul>li::before {
+        content: "";
+        position: absolute;
+        left: -12px;
+        width: 4px;
+        height: 4px;
+        background-color: #FFFFFF;
+        transform: translate(0px, 10px);
+    }
+
+    .service-arrow {
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+        height: 10px;
+
+        .arrow-line {
+            width: 33px;
+            height: 2px;
+            background-color: #FFFFFF;
+        }
+
+        .arrow {
+            width: 5px;
+            height: 10px;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            div {
+                border: solid #FFFFFF;
+                border-width: 2px 2px 0 0;
+                position: absolute;
+                padding: 3px;
+                width: 5px;
+                height: 5px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
 
 @media (min-width: 576px) {
 

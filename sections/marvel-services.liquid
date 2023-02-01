@@ -1,3 +1,4 @@
+{{ "reset.scss.css" | asset_url | stylesheet_tag }}
 {{ "general.scss.css" | asset_url | stylesheet_tag }}
 {{ "services.scss.css" | asset_url | stylesheet_tag }}
 
@@ -9,9 +10,8 @@
 
     <div class="services-box">
       {% for block in section.blocks %}
-        <div class="services-item">
-          <div class="service-name">{{ block.settings.service-name }}
-          </div>
+        <div class="service-item">
+          <div class="service-name">{{ block.settings.service-name }}</div>
           <ul class="services-descr-list">
             <li>{{ block.settings.service-descr-1 }}</li>
             <li>{{ block.settings.service-descr-2 }}</li>
@@ -19,13 +19,12 @@
             <li>{{ block.settings.service-descr-4 }}</li>
           </ul>
           <div class="service-arrow">
-            <div class="line"></div>
+            <div class="arrow-line">&nbsp</div>
             <div class="arrow">
-              <div></div>
+              <div>&nbsp</div>
             </div>
           </div>
         </div>
-
       {% endfor %}
     </div>
   </div>
