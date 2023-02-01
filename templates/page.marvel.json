@@ -89,11 +89,11 @@
         "34211d79-ae7f-46c0-bf09-b6e2b440c1eb": {
           "type": "add-service",
           "settings": {
-            "service-name": "",
-            "service-descr-1": "",
-            "service-descr-2": "",
-            "service-descr-3": "",
-            "service-descr-4": ""
+            "service-name": "Market Development",
+            "service-descr-1": "New venture strategy",
+            "service-descr-2": "Go-to-market architecture",
+            "service-descr-3": "M&A support",
+            "service-descr-4": "Marketing and partnerships"
           }
         }
       },
