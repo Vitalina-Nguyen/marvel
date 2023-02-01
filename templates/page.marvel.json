@@ -64,7 +64,26 @@
       }
     },
     "services": {
-      "type": "marvel-services"
+      "type": "marvel-services",
+      "blocks": {
+        "34897357-a381-4780-a2b6-47e3af2a5160": {
+          "type": "add-service",
+          "settings": {
+            "service-name": "Transaction Support",
+            "service-descr-1": "Renewable Natural Gas offtakes",
+            "service-descr-2": "RIN, RTC, REC and LCFS brokerage",
+            "service-descr-3": "Renewable PPA origination",
+            "service-descr-4": "Contract negotiations and structuring"
+          }
+        }
+      },
+      "block_order": [
+        "34897357-a381-4780-a2b6-47e3af2a5160"
+      ],
+      "settings": {
+        "section-title": "Services",
+        "section-descr": "Our clients are at the forefront of energy transition and innovation. Their mandate is complex: balance project needs with customer demands, lofty investment targets and development complexities. Layer on market volatility and regulatory risk and the scope becomes less manageable in-house. This is where Marvel comes in. We understand the task and bring deep expertise to addressing these challenges."
+      }
     }
   },
   "order": [
