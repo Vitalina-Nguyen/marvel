@@ -1,7 +1,10 @@
 {
   "sections": {
     "product": {
-      "type": "cafe-product"
+      "type": "cafe-product",
+      "settings": {
+        "product-item": "cappuccino"
+      }
     }
   },
   "order": [
