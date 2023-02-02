@@ -3,8 +3,9 @@
 <section class="product">
 
   {% for product in collection.products %}
-    {% if product.title == "{{section.settings.product-name}}" %}
-      {{ product.title }} 
+    {{ product.title }}
+    {% if product.id == "{{ section.settings.product-item.id }}" %}
+      <p>{{ product.title }}</p>
     {% endif %}
   {% endfor %}
 
@@ -15,9 +16,9 @@
     "name": "product",
     "settings": [
       {
-        "type": "text",
-        "id": "product-name",
-        "label": "Add product name"
+        "type": "product",
+        "id": "product-item",
+        "label": "Choose a product"
       }
     ]
   }
