@@ -1,11 +1,14 @@
 {{ 'marvel.min.css' | asset_url | stylesheet_tag }}
 
 <section class="product">
-  
-  </div>
+
+  {% for product in collection.products %}
+    {% if product.title == "{{section.settings.product-name}}" %}
+      {{ product.title }} 
+    {% endif %}
+  {% endfor %}
+
 </section>
-
-
 
 {% schema %}
   {
@@ -13,8 +16,8 @@
     "settings": [
       {
         "type": "text",
-        "id": "section-title",
-        "label": "Add section title"
+        "id": "product-name",
+        "label": "Add product name"
       }
     ]
   }
