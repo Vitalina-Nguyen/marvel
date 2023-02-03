@@ -1,0 +1,16 @@
+{
+    "sections": {
+      "item": {
+        "type": "product-item",
+        "settings": {}
+      },
+      "other": {
+        "type": "product-other",
+        "settings": {}
+      }
+    },
+    "order": [
+      "item",
+      "other"
+    ]
+  }

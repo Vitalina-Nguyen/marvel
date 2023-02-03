@@ -1,10 +1,10 @@
 <div>
     {%  for product in collection.products %} 
         <div>
-            {{product.featured_image}}
+            <img src="{{product.featured_image | img_url: 'master'}}" alt="">
             {{product.title}}
             
         </div>
 
-    {% endfor %} %}
+    {% endfor %}
 </div>

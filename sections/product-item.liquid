@@ -1,0 +1,29 @@
+{{ 'product.min.css' | asset_url | stylesheet_tag }}
+
+<section class="product-item">
+    <div class="item-img">
+        <img src="{{product.featured_image | img_url: 'master'}}" alt="">
+    </div>
+    <div class="item-info">
+        <div class="item-title">
+            {{product.title}}
+        </div>
+        <div class="item-description">
+            {{product.description}}
+        </div>
+    </div>
+</section>   
+
+
+{% schema %}
+    {
+      "name": "item",
+      "settings": [
+        {
+          "type": "product",
+          "id": "item",
+          "label": "Choose a product"
+        }
+      ]
+    }
+  {% endschema %}

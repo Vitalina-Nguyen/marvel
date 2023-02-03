@@ -15,7 +15,7 @@ export const path = {
         js: `${srcFolder}/js/**/*.js`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,pdf}`,
         svg: `${srcFolder}/img/**/*.svg`,
-        scss: `${srcFolder}/scss/marvel.scss`,
+        scss: `${srcFolder}/scss/{marvel,product}.scss`,
         files: `${srcFolder}/files/**/*.*`
     },
     watch: {

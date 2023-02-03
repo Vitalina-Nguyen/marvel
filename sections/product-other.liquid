@@ -1,0 +1,35 @@
+{{ 'product.min.css' | asset_url | stylesheet_tag }}
+
+<section class="product-other">
+    {% for block in section.blocks %}
+        <div class="img-box">
+            <img src="{{block.settings.img | img_url: 'master'}}" alt="">
+        </div>
+        <div class="title">{{block.settings.title}}</div>
+    {% endfor %}
+</section>
+
+{% schema %}
+  {
+    "name": "other",
+    "blocks": [
+      {
+        "name": "Add someth",
+        "type": "add-someth",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Add an image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Add a title"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
