@@ -1,11 +1,12 @@
 {
-    "sections": {
-      "cafe": {
-        "type": "cafe",
-        "settings": {}
+  "sections": {
+    "cafe": {
+      "type": "cafe",
+      "settings": {
       }
-    },
-    "order": [
-      "cafe"
-    ]
-  }
+    }
+  },
+  "order": [
+    "cafe"
+  ]
+}

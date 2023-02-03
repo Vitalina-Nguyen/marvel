@@ -1,16 +1,31 @@
 {
-    "sections": {
-      "item": {
-        "type": "product-item",
-        "settings": {}
-      },
-      "other": {
-        "type": "product-other",
-        "settings": {}
+  "sections": {
+    "item": {
+      "type": "product-item",
+      "settings": {
+        "item": ""
       }
     },
-    "order": [
-      "item",
-      "other"
-    ]
-  }
+    "other": {
+      "type": "product-other",
+      "blocks": {
+        "b5072bb0-8dd3-4690-82a0-7a8976becd84": {
+          "type": "add-someth",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/delicious-plate-of-pepperoni-pizza.jpg",
+            "title": "Pizza"
+          }
+        }
+      },
+      "block_order": [
+        "b5072bb0-8dd3-4690-82a0-7a8976becd84"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "item",
+    "other"
+  ]
+}
