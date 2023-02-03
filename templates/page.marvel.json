@@ -1,4 +1,5 @@
-{
+{ 
+  "layout": "marvel",
   "sections": {
     "mission": {
       "type": "marvel-mission",
