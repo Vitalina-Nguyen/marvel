@@ -1,0 +1,11 @@
+{
+    "sections": {
+      "cafe": {
+        "type": "cafe",
+        "settings": {}
+      }
+    },
+    "order": [
+      "cafe"
+    ]
+  }
