@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
   <noscript>{{ 'component-mega-menu.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
+<link rel="stylesheet" href="{{ 'header-custom.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- if settings.cart_type == "drawer" -%}
   {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
   {{ 'component-cart.css' | asset_url | stylesheet_tag }}
@@ -913,21 +914,21 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 36,
-      "step": 4,
+      "max": 35,
+      "step": 5,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 20
+      "default": 15
     },
     {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 36,
-      "step": 4,
+      "max": 35,
+      "step": 5,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 20
+      "default": 15
     }
   ]
 }
