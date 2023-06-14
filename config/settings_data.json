@@ -132,7 +132,7 @@
         "settings": {
           "color_scheme": "background-1",
           "logo": "shopify:\/\/shop_images\/Knitly.svg",
-          "logo_width": 90,
+          "logo_width": 110,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
