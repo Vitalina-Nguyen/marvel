@@ -1,4 +1,5 @@
 /* Color custom properties */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 :root,
 .color-background-1 {
@@ -2244,10 +2245,6 @@ input[type='checkbox'] {
   z-index: 1;
 }
 
-.header-wrapper--border-bottom {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-}
-
 .header {
   display: grid;
   grid-template-areas: 'left-icon heading icons';
@@ -2958,16 +2955,15 @@ details-disclosure > details {
 }
 
 /* Custom general style*/
+/* import of fonts in the top */
+
 body {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 700;
 }
 
 .h5 {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 16px;
   font-feature-settings: 'pnum' on, 'lnum' on;

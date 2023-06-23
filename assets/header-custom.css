@@ -1,3 +1,25 @@
-.header__menu-item.list-menu__item span {
+.header__menu-item.list-menu__item.link span {
+    line-height: 16px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #6F6F6F;
+}
 
+/* Active nav link + hovered*/
+.header__menu-item.list-menu__item.link .header__active-menu-item,
+.list-menu .header__menu-item.list-menu__item.link:hover > span {
+    color: #E7635E;
+    text-decoration: none;
+    position: relative;
+}
+
+.header__menu-item.list-menu__item.link .header__active-menu-item:after,
+.list-menu .header__menu-item.list-menu__item.link:hover > span:after {
+    content: "";
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    height: 3px;
+    width: 43px;
+    border-radius: 10px;
+    background: #F97575;
 }
