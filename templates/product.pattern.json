@@ -1,0 +1,15 @@
+{
+  "name": "Product pattern",
+  "sections": {
+    "product-pattern": {
+      "type": "product-pattern-info",
+      "settings": {
+        "show_vendor": true
+      }
+    }
+  },
+  "order": [
+    "product-pattern"
+  ]
+}
+

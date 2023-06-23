@@ -1,0 +1,19 @@
+{{ 'product.min.css' | asset_url | stylesheet_tag }}
+
+<section class="product-item">
+    dfgdfgdf
+</section>   
+
+
+{% schema %}
+    {
+      "name": "item",
+      "settings": [
+        {
+          "type": "product",
+          "id": "item",
+          "label": "Choose a product"
+        }
+      ]
+    }
+  {% endschema %}
