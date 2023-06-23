@@ -3,7 +3,6 @@
     "product": {
       "type": "cafe-product",
       "settings": {
-        "product-item": "cappuccino"
       }
     }
   },
